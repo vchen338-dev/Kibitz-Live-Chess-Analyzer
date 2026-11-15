@@ -10,6 +10,16 @@ You point it at a board, train a tiny vision model on your own board theme (trai
 
 ---
 
+## See it in action
+
+![Kibitz walkthrough: capture, slice, classify, track, analyse](assets/kibitz-demo.gif)
+
+*Drag a box over any board, Kibitz slices it into 64 squares, the CNN reads each one, `python-chess` tracks the moves, and Stockfish shows its top three lines.*
+
+![PyTorch CNN](https://img.shields.io/badge/PyTorch-CNN-ee4c2c) ![Stockfish](https://img.shields.io/badge/Stockfish-17-green) ![python-chess](https://img.shields.io/badge/python--chess-1.10+-blue) ![PySide6](https://img.shields.io/badge/PySide6-Qt-41cd52)
+
+---
+
 ## Why this project exists
 
 I built this for two reasons:
@@ -129,6 +139,7 @@ The trained model is saved to `models/board_cnn.pt` and loaded automatically nex
 ## Project structure
 
 ```
+assets/            Demo animation used in this README
 main.py            Main window and app wiring
 theme.py           Colours, fonts, Qt stylesheet
 widgets.py         Board view with eval bar, overlay, small UI helpers
