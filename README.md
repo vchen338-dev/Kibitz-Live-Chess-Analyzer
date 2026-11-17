@@ -1,5 +1,10 @@
 # Kibitz
 
+
+## Youtube: https://youtu.be/tvTwuV-y1UE
+
+
+
 *Chess vision and analysis, powered by a CNN and Stockfish.*
 
 > In chess, to "kibitz" is to watch a game and comment on it. That's what this app does: it watches the board on your screen and tells you what the engine thinks.
