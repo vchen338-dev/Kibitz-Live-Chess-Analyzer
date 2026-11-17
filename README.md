@@ -47,13 +47,7 @@ If you're ever unsure, wait until the game is over and analyse it then.
 
 ## How it works
 
-```
- screen region ──► split into 64 squares ──► CNN classifies each square ──► 8x8 grid
-                                                                              │
-   Stockfish (top 3 lines) ◄── python-chess (legal-move tracking) ◄───────────┘
-            │
-            └──► board + arrows + evaluation bar + engine lines
-```
+![How Kibitz works: capture, vision (CNN), move tracking, Stockfish analysis](assets/how-it-works.png)
 
 1. **Capture.** You drag a rectangle over the board. The app grabs that region about 2.5 times per second and only does work when the picture actually changes.
 2. **Vision (CNN).** The board image is cut into 64 squares. Each square goes through a small CNN that predicts one of 13 classes: empty, or one of 12 pieces (6 white, 6 black).
